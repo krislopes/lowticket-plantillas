@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kit +200 Plantillas Editables</title>
+<!-- Meta Pixel - Mulher de Poder -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1776455843411399');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1776455843411399&ev=PageView&noscript=1"/></noscript>
+<!-- Fim Meta Pixel -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFF8EC;
+  --ink:#2B2420;
+  --muted:#6B5F54;
+  --coral:#FF5A5F;
+  --coral-dark:#E8434A;
+  --blue:#0E8BE0;
+  --blue-dark:#0A68AC;
+  --teal:#0E8C83;
+  --teal-dark:#0B6E67;
+  --yellow:#FFCF56;
+  --lilac:#9C86E8;
+  --lilac-dark:#6B55C9;
+  --teal-tint:#E9F4F2;
+  --lilac-tint:#F0ECFB;
+  --card:#FFFFFF;
+  --line:#EADFCD;
+}
+.tint-teal{
+  background-color:var(--teal-tint);
+  background-image:radial-gradient(rgba(14,140,131,.16) 1.6px, transparent 1.6px);
+  background-size:20px 20px;
+}
+.tint-lilac{
+  background-color:var(--lilac-tint);
+  background-image:radial-gradient(rgba(108,86,201,.18) 1.6px, transparent 1.6px);
+  background-size:20px 20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden}
+body{
+  font-family:'Inter',Arial,sans-serif;color:var(--ink);background:var(--paper);
+  line-height:1.5;overflow-x:hidden;
+}
+img{display:block;width:100%;height:auto}
+.wrap{max-width:440px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Fredoka',sans-serif;font-weight:600;line-height:1.22}
+section{position:relative;padding:40px 0 48px}
+
+/* borda recortada entre seções, tipo papel picotado */
+.edge{position:absolute;left:0;right:0;height:14px;background-repeat:repeat-x;background-size:24px 14px;z-index:2}
+.edge-top{top:-1px}
+.edge-bot{bottom:-1px;transform:scaleY(-1)}
+
+.center{text-align:center}
+
+.btn{
+  display:block;width:100%;max-width:280px;margin:26px auto 0;padding:16px 18px;
+  border-radius:999px;background:var(--blue);color:#fff;text-decoration:none;text-align:center;
+  font-family:'Fredoka',sans-serif;font-weight:600;font-size:16px;letter-spacing:.2px;
+  box-shadow:0 6px 0 var(--blue-dark);transition:transform .12s, box-shadow .12s;
+}
+.btn:hover{transform:translateY(2px);box-shadow:0 4px 0 var(--blue-dark)}
+.btn:active{transform:translateY(5px);box-shadow:0 1px 0 var(--blue-dark)}
+
+.riscado{text-decoration:line-through;color:var(--muted);font-weight:500}
+
+/* etiqueta de preço com furo, feito de CSS puro */
+.price-tag{
+  position:relative;display:inline-flex;align-items:center;gap:10px;
+  background:var(--yellow);color:var(--ink);border-radius:10px 4px 4px 10px;
+  padding:12px 20px 12px 28px;margin-top:18px;font-family:'Fredoka',sans-serif;
+}
+.price-tag::before{
+  content:'';position:absolute;left:10px;top:50%;transform:translateY(-50%);
+  width:8px;height:8px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);
+}
+.price-tag .now{font-size:26px;font-weight:700}
+.price-tag .was{font-size:14px}
+
+.lead{font-size:16px;color:var(--muted);margin-top:10px}
+
+/* checklist com marcador circular colorido, sem o cartão cinza padrão */
+.check-list{margin-top:18px;display:flex;flex-direction:column;gap:14px}
+.check-list .item{display:flex;align-items:flex-start;gap:12px}
+.check-item-mark{
+  flex:none;width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-top:1px;
+}
+.check-list p{font-size:15px;font-weight:500}
+
+figure.shot{margin:18px 0 10px;transform:rotate(-1deg)}
+figure.shot.r{transform:rotate(1deg)}
+figure.shot img{border-radius:10px;box-shadow:0 10px 24px -14px rgba(0,0,0,.35)}
+figure.shot figcaption{
+  margin-top:10px;background:var(--card);border:1px solid var(--line);border-radius:8px;
+  padding:10px 14px;font-weight:600;font-size:14.5px;text-align:center;transform:rotate(0.6deg);
+}
+
+/* cartões de bônus, cada um com sua cor, formato de etiqueta */
+.bonus{margin-top:22px}
+.bonus-tag{
+  position:relative;border-radius:12px;padding:16px 18px 16px 22px;color:#fff;font-size:15px;line-height:1.5;
+}
+.bonus-tag::before{
+  content:'';position:absolute;left:0;top:14px;bottom:14px;width:5px;border-radius:4px;background:rgba(255,255,255,.55);
+}
+.bonus-tag b{font-family:'Fredoka',sans-serif;font-weight:600;display:block;margin-bottom:2px;font-size:16px}
+.bonus-tag.c1{background:var(--teal)}
+.bonus-tag.c2{background:var(--coral)}
+.bonus-tag.c3{background:var(--lilac)}
+.bonus-tag.c4{background:var(--teal-dark)}
+
+blockquote{
+  font-family:'Fredoka',sans-serif;font-weight:600;font-size:19px;text-align:center;color:var(--ink);
+  margin-top:18px;line-height:1.35;
+}
+blockquote::before{content:'“'}
+blockquote::after{content:'”'}
+
+.offer-card{
+  background:var(--card);border-radius:16px;padding:26px 22px;text-align:center;
+  border:2px dashed var(--teal);
+}
+.offer-card .check-list{display:inline-block;text-align:left;margin-top:16px}
+
+.badge-row{display:flex;justify-content:center;gap:10px;margin-top:16px;flex-wrap:wrap}
+.badge{font-size:13px;font-weight:600;background:#fff;color:var(--teal-dark);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+
+details{border-bottom:1px dashed var(--line);padding:16px 2px}
+details:first-of-type{border-top:1px dashed var(--line)}
+summary{font-family:'Fredoka',sans-serif;font-weight:600;font-size:16.5px;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';flex:none;color:var(--teal);font-size:20px;font-weight:700}
+details[open] summary::after{content:'–'}
+details p{margin-top:10px;font-size:14.5px;color:var(--muted)}
+
+.occ-list{margin-top:14px;font-size:15px;color:var(--muted);line-height:1.8}
+.occ-list b{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<!-- 1. HERO -->
+<section style="background:#fff;padding-top:44px">
+  <div class="wrap center">
+    <h1 style="font-size:27px">Crea papelería y decoraciones profesionales sin saber de diseño</h1>
+    <p class="lead">Más de 200 plantillas editables para cumpleaños, baby showers, bodas y cualquier celebración. Cambias colores y textos en minutos.</p>
+    <figure class="shot" style="margin-top:22px">
+      <img src="images/01-topo-kit.webp" alt="Kit de plantillas editables">
+    </figure>
+    <div class="price-tag">
+      <span class="was riscado">Antes $49 USD</span>
+      <span class="now">$6.90 USD</span>
+    </div>
+    <a class="btn" href="https://pay.kiwify.com/s8z0pYP">Quiero mi kit ahora</a>
+  </div>
+  <div class="edge edge-bot" style="background-image:radial-gradient(circle at 12px 0, transparent 12px, var(--teal-tint) 13px);background-color:#fff"></div>
+</section>
+
+<!-- 2. O QUE INCLUI -->
+<section class="tint-teal" style="padding-top:30px">
+  <div class="wrap">
+    <h2 class="center" style="color:var(--teal-dark);font-size:23px">Todo lo que vas a encontrar dentro</h2>
+    <figure class="shot">
+      <img src="images/02-mais-200-plantillas.webp" alt="">
+      <figcaption>Más de 200 plantillas editables</figcaption>
+    </figure>
+    <figure class="shot r">
+      <img src="images/03-cajitas-banderines.webp" alt="">
+      <figcaption>Cajitas creativas, banderines y decoraciones</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="images/04-fiestas-eventos.webp" alt="">
+      <figcaption>Diseños listos para fiestas y eventos</figcaption>
+    </figure>
+    <figure class="shot r">
+      <img src="images/05-version-gratuita.webp" alt="">
+      <figcaption>Compatible con la versión gratuita</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="images/06-chipbags-porta-vasos.jpg" alt="">
+      <figcaption>Chipbags y portavasos</figcaption>
+    </figure>
+    <figure class="shot r" style="margin-bottom:0">
+      <img src="images/07-etiquetas.webp" alt="">
+      <figcaption>Etiquetas personalizables</figcaption>
+    </figure>
+  </div>
+  <div class="edge edge-bot" style="background-image:radial-gradient(circle at 12px 0, transparent 12px, var(--paper) 13px);background-color:var(--teal-tint)"></div>
+</section>
+
+<!-- 3. BENEFÍCIOS -->
+<section style="background:var(--paper)">
+  <div class="wrap">
+    <h2 class="center" style="font-size:23px">Con este kit vas a poder</h2>
+    <div class="check-list">
+      <div class="item"><span class="check-item-mark">✓</span><p>Ahorrar horas armando diseños desde cero</p></div>
+      <div class="item"><span class="check-item-mark">✓</span><p>Lograr resultados profesionales sin saber de diseño</p></div>
+      <div class="item"><span class="check-item-mark">✓</span><p>Personalizar colores, textos y estilos en segundos</p></div>
+      <div class="item"><span class="check-item-mark">✓</span><p>Armar papelería creativa para cualquier ocasión</p></div>
+      <div class="item"><span class="check-item-mark">✓</span><p>Emprender o decorar sin complicarte</p></div>
+    </div>
+    <a class="btn" href="https://pay.kiwify.com/s8z0pYP">Quiero mi kit ahora</a>
+  </div>
+</section>
+
+<!-- 4. BÔNUS -->
+<section style="background:#fff">
+  <div class="wrap">
+    <h2 class="center" style="font-size:25px">Regalos con tu compra</h2>
+    <p class="center lead" style="margin-top:6px">Además recibís, completamente gratis</p>
+    <figure class="shot" style="margin-top:20px">
+      <img src="images/08-bonus-etiquetas-escolares.jpg" alt="">
+    </figure>
+    <div class="bonus">
+      <div class="bonus-tag c1"><b>+1.500 etiquetas escolares</b>Para lápices, cuadernos, borradores y más. Personalizables en PowerPoint, más un kit escolar con carátulas y tablas de multiplicar editables.</div>
+    </div>
+    <figure class="shot r" style="margin-top:20px">
+      <img src="images/09-bonus-libritos-colorear.webp" alt="">
+    </figure>
+    <div class="bonus">
+      <div class="bonus-tag c2"><b>+190 libritos para colorear</b>Personalizables, con plantilla editable de cajita de crayones en 6 tamaños y cierra bolsa editable.</div>
+    </div>
+    <figure class="shot" style="margin-top:20px">
+      <img src="images/10-bonus-invitaciones.webp" alt="">
+    </figure>
+    <div class="bonus">
+      <div class="bonus-tag c3"><b>+250 invitaciones digitales</b>Editables, de diferentes temáticas y para todo tipo de celebraciones.</div>
+    </div>
+    <figure class="shot r" style="margin-top:20px">
+      <img src="images/11-bonus-actualizaciones.webp" alt="">
+    </figure>
+    <div class="bonus">
+      <div class="bonus-tag c4"><b>Actualizaciones sin costo extra</b>Cada plantilla nueva que se agregue al kit, la recibís incluida.</div>
+    </div>
+    <a class="btn" href="https://pay.kiwify.com/s8z0pYP">Quiero mi kit ahora</a>
+  </div>
+</section>
+
+<!-- 5. PROVAS -->
+<section style="background:var(--paper)">
+  <div class="wrap">
+    <h2 class="center" style="font-size:25px;color:var(--teal-dark)">Clientas felices</h2>
+    <figure class="shot" style="margin-top:18px">
+      <img src="images/12-prova-1.webp" alt="">
+    </figure>
+    <figure class="shot r">
+      <img src="images/13-prova-2.webp" alt="">
+    </figure>
+    <figure class="shot">
+      <img src="images/14-prova-3.webp" alt="">
+    </figure>
+    <figure class="shot r" style="margin-bottom:0">
+      <img src="images/15-prova-4.webp" alt="">
+    </figure>
+    <blockquote>Estas plantillas hicieron mis diseños mucho más profesionales y rápidos de crear.</blockquote>
+  </div>
+</section>
+
+<!-- 6. OFERTA FINAL -->
+<section class="tint-teal">
+  <div class="wrap">
+    <div class="offer-card">
+      <figure style="margin:0 auto 14px;max-width:160px">
+        <img src="images/01-topo-kit.webp" alt="">
+      </figure>
+      <p style="color:var(--muted);font-weight:600">Aprovecha el precio especial de lanzamiento</p>
+      <div class="price-tag" style="margin-top:14px">
+        <span class="was riscado">Antes $49 USD</span>
+        <span class="now">$6.90 USD</span>
+      </div>
+      <a class="btn" href="https://pay.kiwify.com/s8z0pYP">¡Lo quiero ahora!</a>
+      <div class="badge-row">
+        <span class="badge">Plantillas editables</span>
+        <span class="badge">Descarga inmediata</span>
+        <span class="badge">Garantía 7 días</span>
+      </div>
+    </div>
+  </div>
+  <div class="edge edge-bot" style="background-image:radial-gradient(circle at 12px 0, transparent 12px, var(--lilac-tint) 13px);background-color:var(--teal-tint)"></div>
+</section>
+
+<!-- 7. GARANTIA -->
+<section class="tint-lilac">
+  <div class="wrap center" style="color:var(--ink)">
+    <h2 style="font-size:23px;color:var(--lilac-dark)">Garantía incondicional de 7 días</h2>
+    <p style="font-weight:600;margin-top:10px">¿Aún tienes dudas? Tu compra está 100% protegida.</p>
+    <p style="margin-top:8px;font-size:14.5px;color:var(--muted)">Si por cualquier motivo el contenido no cumple con lo prometido, tienes hasta 7 días para pedir el reembolso completo, sin preguntas ni complicaciones.</p>
+  </div>
+  <div class="edge edge-bot" style="background-image:radial-gradient(circle at 12px 0, transparent 12px, var(--paper) 13px);background-color:var(--lilac-tint)"></div>
+</section>
+
+<!-- 8. OCASIÕES -->
+<section style="background:var(--paper)">
+  <div class="wrap center">
+    <h2 style="font-size:21px">Un kit, todas las ocasiones del año</h2>
+    <p class="occ-list"><b>Baby showers · Cumpleaños · Bodas · Bautizos y comuniones · Halloween · Navidad · Graduaciones · San Valentín · Inicio de clases · Día del niño</b> y todo lo que se te ocurra festejar.</p>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section style="background:#fff">
+  <div class="wrap">
+    <h2 class="center" style="font-size:22px;margin-bottom:6px">Preguntas frecuentes</h2>
+    <details><summary>¿Qué materiales necesito para completar los proyectos?</summary>
+      <p>Solo necesitas una computadora o celular, una impresora, tijeras y materiales básicos de papelería como cartulina.</p></details>
+    <details><summary>¿Qué formas de pago aceptan?</summary>
+      <p>Puedes pagar con tarjeta de crédito, de débito o PayPal.</p></details>
+    <details><summary>¿Cómo recibo el kit después de comprar?</summary>
+      <p>Después de completar tu compra, te llega al correo un PDF con el enlace para descargar las plantillas y empezar a usarlas de inmediato.</p></details>
+    <details><summary>¿Necesito tener una cuenta PRO?</summary>
+      <p>No, las plantillas funcionan perfectamente con la versión gratuita.</p></details>
+    <figure style="margin-top:22px">
+      <img src="images/16-rodape.jpg" alt="" style="border-radius:10px">
+    </figure>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.btn').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      var href = this.getAttribute('href');
+      if(typeof fbq === 'undefined'){ return; }
+      e.preventDefault();
+      fbq('track', 'InitiateCheckout');
+      setTimeout(function(){ window.location.href = href; }, 150);
+    });
+  });
+</script>
+</body>
+</html>
